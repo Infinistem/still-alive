@@ -1,2 +1,2 @@
 # still-alive
-Portal still alive credits recreated in python!
+Portal still alive credits recreated in javascript!
