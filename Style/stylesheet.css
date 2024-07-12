@@ -1,0 +1,101 @@
+html body {
+    margin:5px;
+    color:lime;
+    background-color:black;
+    font-size:20px;
+    width:1200px;
+}
+
+.example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .example1 h3 {
+    font-size: 3em;
+    color: rgb(34, 244, 34);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);	
+    transform:translateY(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes example1 {
+    0%   { -moz-transform: translatY(100%); }
+    100% { -moz-transform: translateY(-100%); }
+   }
+   @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateY(100%); }
+    100% { -webkit-transform: translateY(-100%); }
+   }
+   @keyframes example1 {
+    0%   { 
+    -moz-transform: translateY(100%); /* Firefox bug fix */
+    -webkit-transform: translateY(100%); /* Firefox bug fix */
+    transform: translateY(100%); 		
+    }
+    100% { 
+    -moz-transform: translateY(-100%); /* Firefox bug fix */
+    -webkit-transform: translateY(-100%); /* Firefox bug fix */
+    transform: translateY(-100%); 
+    }
+   }
+
+   #text {
+    width:600px;
+    height: 660px;
+    border-color:lime;
+    border-width:1px;
+    border-style:dashed;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+
+
+
+   }
+   #credits {
+    float:right;
+    margin-top:-662px;
+    margin-right:-40px;
+    width:600px;
+    height: 320px;
+    border-color:lime;
+    border-width:1px;
+    border-style:dashed;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+   }
+.ascii {
+    float:right;
+    margin-top:-322px;
+    font-size:12px;
+    margin-right:-40px;
+    width:600px;
+    height: 320px;
+    border-color:lime;
+    border-width:1px;
+    border-style:dashed;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+   }
+   div {
+    margin:5px;
+   }
+   
+   
